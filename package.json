@@ -1,0 +1,19 @@
+{
+  "name": "tscperftest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-slow": "tsc -b tsconfig.json --watch",
+    "trace-slow": "tsc -b tsconfig.json --watch --generateTrace tracing_slow",
+    "watch-fast": "tsc -p tsconfig.json --watch",
+    "trace-fast": "tsc -p tsconfig.json --watch --generateTrace tracing_fast"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.6.0-dev.20211105"
+  }
+}
